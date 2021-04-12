@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+    <body>
+        
+     <h1 id="title">Anime Survey Form</h1>
+     <p id="description">This is a Survey form which requires
+         you to fill out your anime interests.
+     </p>
+     <div id="total">
+     <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter name" size="30"><br>
+
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter email" size="30"><br>
+
+        <label for="number" id="number-label">Number:</label>
+        <input type="number" id="number" min=0 max= 10 name="number" placeholder="Enter number" ><br>
+
+        <label for="anime" id="droptext">Choose an Anime Genre:</label>
+
+            <select name="dropdown" id="dropdown">
+              <option value="shonen">Shonen</option>
+              <option value="isekai">Isekai</option>
+              <option value="romance">Romance</option>
+              <option value="sci-fi">Sci-fi</option>
+            </select><br>
+     
+          <label id="additional-comments-label">Additional Comments:</label>
+          <textarea placeholder="Additional Comments"></textarea><br>
+      
+          <div id="button-area">
+             <label id="gender-label">Gender:</label><br>
+             <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+             <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+             <input type="radio" class="radio-inline" name="gender" value="other"> Other<br>
+          </div>
+        <div id="button-area">
+        <input type="checkbox" id="action" name="action" value="action">
+        <label for="action"> Action</label><br>
+        <input type="checkbox" id="adventure" name="adventure" value="adventure">
+        <label for="adventure"> Adventure</label><br>
+        <input type="checkbox" id="emotional" name="emotional" value="supernatural">
+        <label for="emotional"> Supernatural</label><br>   
+        </div>
+        <input type="submit" id="submit">
+     </form>
+     <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+         </div>
+    </body>
+  </html>
